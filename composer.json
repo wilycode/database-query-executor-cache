@@ -1,0 +1,89 @@
+{
+    "name": "wilycode/database-query-executor-cache",
+    "description": "PSR-16 caching decorator for WilyCode database query executors with transaction-aware invalidation.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "psr/simple-cache": "^3.0",
+        "wilycode/database-query": "^0.1",
+        "wilycode/database-query-executor": "^0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "wilycode/cache-file": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "WilyCode\\Database\\QueryExecutorCache\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WilyCode\\Database\\QueryExecutorCache\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Simon Piter"
+        }
+    ],
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "/tests",
+            "/examples",
+            "/docs",
+            "/benchmark",
+            "/benchmarks",
+            "/tools",
+            "/phpunit.xml",
+            "/phpunit.xml.dist",
+            "/CHANGELOG.md",
+            "/CONTRIBUTING.md",
+            "/CODE_OF_CONDUCT.md",
+            "/SECURITY.md",
+            "/composer.lock",
+            "/.github",
+            "/.gitignore",
+            "/.gitattributes",
+            "/.editorconfig",
+            "/.phpunit.cache",
+            "/.phpunit.result.cache",
+            "/phpstan.neon",
+            "/phpstan.neon.dist",
+            "/phpstan.*.neon",
+            "/phpstan.*.neon.dist",
+            "/pint.json",
+            "/rector.php",
+            "/psalm.xml",
+            "/psalm.xml.dist",
+            "/infection.json",
+            "/infection.json.dist"
+        ]
+    },
+    "homepage": "https://github.com/wilycode/database-query-executor-cache",
+    "support": {
+        "issues": "https://github.com/wilycode/database-query-executor-cache/issues",
+        "source": "https://github.com/wilycode/database-query-executor-cache"
+    },
+    "keywords": [
+        "wilycode",
+        "database",
+        "sql",
+        "query",
+        "executor",
+        "cache",
+        "caching",
+        "psr-16",
+        "transactions",
+        "decorator"
+    ]
+}

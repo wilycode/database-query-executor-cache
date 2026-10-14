@@ -82,10 +82,10 @@ composer require wilycode/database-query-executor-cache
 For the examples below, also install the WilyCode filesystem cache and PDO adapter:
 
 ```bash
-composer require wilycode/cache-file wilycode/database-driver-pdo
+composer require wilycode/cache-file wilycode/database-pdo
 ```
 
-Use `wilycode/database-driver-mysqli` and `MysqliBinder` instead if your application uses MySQLi.
+Use `wilycode/database-mysqli` and `MysqliBinder` instead if your application uses MySQLi.
 
 ## Quick start with PDO and File Cache
 
@@ -392,10 +392,10 @@ Use a dedicated storage directory for `wilycode/cache-file`, outside the public 
 | Package | Purpose |
 | --- | --- |
 | [`wilycode/database-query`](https://github.com/wilycode/database-query) | Build and compile SQL statements. |
-| [`wilycode/database-driver`](https://github.com/wilycode/database-driver) | Database connection, query and transaction contracts. |
+| [`wilycode/database`](https://github.com/wilycode/database) | Database connection, query and transaction contracts. |
 | [`wilycode/database-query-executor`](https://github.com/wilycode/database-query-executor) | Execute compiled queries through the selected database driver. |
-| [`wilycode/database-driver-pdo`](https://github.com/wilycode/database-driver-pdo) | PDO driver and canonical parameter binder. |
-| [`wilycode/database-driver-mysqli`](https://github.com/wilycode/database-driver-mysqli) | MySQLi driver and canonical parameter binder. |
+| [`wilycode/database-pdo`](https://github.com/wilycode/database-pdo) | PDO driver and canonical parameter binder. |
+| [`wilycode/database-mysqli`](https://github.com/wilycode/database-mysqli) | MySQLi driver and canonical parameter binder. |
 | [`wilycode/cache-file`](https://github.com/wilycode/cache-file) | Filesystem-backed PSR-16 cache implementation. |
 | [`wilycode/database-query-executor-profiler`](https://github.com/wilycode/database-query-executor-profiler) | Optional query profiling decorator. |
 
